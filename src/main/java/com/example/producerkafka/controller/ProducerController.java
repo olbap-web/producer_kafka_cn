@@ -76,7 +76,7 @@ public class ProducerController {
 
             if(senal.getNombre().equals("temperatura") && esNumeroValido(senal.getValor())){
                 double valor = Double.parseDouble(senal.getValor());
-                if(valor > 38.2){
+                if(valor > 37.5){
                     alerta = " - Alerta: Paciente "+request.getNombre()+" con fiebre ("+senal.getValor()+")";
                     producerService.sendMessage(alerta, 1);
                     System.out.println(alerta);
