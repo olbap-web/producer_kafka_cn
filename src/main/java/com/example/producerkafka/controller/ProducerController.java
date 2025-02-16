@@ -51,14 +51,12 @@ public class ProducerController {
                 * Not a managed type: class com.example.producerkafka.model.SenalVitalBdd
              * 
             */
-
             // SenalVitalBdd senalVital = new SenalVitalBdd(
             //     null,  
             //     senal.getNombre(),
             //     senal.getValor(),
             //     Long.parseLong(request.getId()) 
             // );
-
             // senalService.createSenal(senalVital);
 
             producerService.sendMessage(mensaje, 2);
@@ -83,12 +81,7 @@ public class ProducerController {
 
                 }
             }
-
-
-
         }
-
-
     }
 
     public boolean esNumeroValido(String str) {
