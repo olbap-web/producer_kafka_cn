@@ -2,10 +2,7 @@ package com.example.producerkafka.controller;
 
 import com.example.producerkafka.model.ApiRequest;
 import com.example.producerkafka.model.SenalVital;
-import com.example.producerkafka.model.SenalVitalBdd;
 import com.example.producerkafka.service.KafkaService;
-import com.example.producerkafka.service.MessageService;
-// import com.example.producerkafka.service.SenalService;
 
 import java.util.List;
 
